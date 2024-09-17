@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body
+    class="d-flex justify-content-center align-items-center flex-column text-capitalize"
+  >
+    <div class="container py-5">
+      <div class="heading my-5">
+        <h1 class="my-4 text-center position-relative " data-aos="fade-down">
+          wlcome in my furni store mangmant
+        </h1>
+      </div>
+
+      <div class="form-gruop my-3t  p-55">
+        <label for="prodctName">prodct Name : </label>
+        <input type="text" class="form-control my-3" id="prodctName" />
+      </div>
+      <div class="form-gruop my-3">
+        <label for="prodctprice">prodct price : </label>
+        <input type="number" class="form-control my-3" id="prodctprice" />
+      </div>
+      <div class="form-gruop my-3">
+        <label for="prodctctgory">prodct ctgory : </label>
+        <input type="text" class="form-control my-3" id="prodctctgory" />
+      </div>
+      <div class="form-gruop my-3">
+        <label for="prodcimage">prodct image : </label>
+        <input type="file" class="form-control my-3" id="prodcimage" />
+      </div>
+      <div class="form-gruop my-3">
+        <label for="prodctDsc"> prodct Dsc : </label>
+        <textarea
+          name="prodctDsc"
+          id="prodctDsc"
+          rows="5"
+          class="form-control my-3"
+        ></textarea>
+      </div>
+      <button id="add" class="btn btn-info  my-5 " onclick="addPro()">Add prodct</button>
+      <button id="update" class="btn btn-warning  d-none" onclick="newData()">Update</button>
+        <input type="text" oninput="scersh()" class="form-control my-3 mb-4 w-50 m-auto" id="scershterm" placeholder="scersh here....." />
+
+      <div class="row g-3 mt-3" id="row">
+        <!-- <div class="col-sm-12 col-md-4">
+          <div class="card text-center shadow">
+            <div class="image">
+              <img src="images/sofa.png" class="card-img-top" alt="" />
+            </div>
+            <div class="info d-flex flex-column">
+              <h2>pro name : sofa</h2>
+              <h3>pro ctgory : sofa</h3>
+              <p class="text-start ms-5">price: <span>15000</span></p>
+              <p class="text-start ms-5">dsc:<span> good</span></p>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+   
+</html>
